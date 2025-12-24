@@ -1,0 +1,115 @@
+# Messages du plugin SkyBlock
+# Utilisez & pour les codes couleur
+
+# Messages généraux
+general:
+  prefix: "&6[SkyBlock]&r "
+  no-permission: "&c❌ Vous n'avez pas la permission d'effectuer cette action !"
+  player-not-found: "&c❌ Joueur non trouvé ou hors ligne !"
+  invalid-number: "&c❌ Nombre invalide !"
+  command-only-players: "&c❌ Cette commande ne peut être exécutée que par un joueur !"
+
+# Messages d'île
+island:
+  created: "&a✅ Votre île a été créée avec succès !"
+  creation-failed: "&c❌ Erreur lors de la création de l'île !"
+  already-have-island: "&c❌ Vous avez déjà une île !"
+  no-island: "&c❌ Vous n'avez pas d'île !"
+  deleted: "&a✅ Île supprimée avec succès !"
+  teleported: "&a✅ Téléportation vers votre île !"
+  welcome-home: "&a🏠 Bienvenue chez vous !"
+  visiting-island: "&e🏝️ Vous visitez l'île de &f{owner}"
+  leaving-island: "&7👋 Vous quittez l'île de &f{owner}"
+  banned-from-island: "&c❌ Vous êtes banni de cette île !"
+  
+# Messages de membres
+members:
+  invited: "&a✅ {player} a été invité sur votre île !"
+  invite-received: "&e📩 Vous avez été invité sur l'île de {owner} !"
+  kicked: "&c❌ {player} a été exclu de l'île !"
+  kick-received: "&c❌ Vous avez été exclu de l'île de {owner} !"
+  banned: "&c❌ {player} a été banni de l'île !"
+  ban-received: "&c❌ Vous avez été banni de l'île de {owner} !"
+  unbanned: "&a✅ {player} n'est plus banni de l'île !"
+  role-changed: "&e⚡ Votre rôle sur l'île de {owner} est maintenant : &b{role}"
+  
+# Messages économiques
+economy:
+  balance: "&6💰 Vous avez &e{balance} SkyCoins&6 !"
+  insufficient-funds: "&c❌ SkyCoins insuffisants ! Il vous faut {amount} SkyCoins."
+  coins-received: "&a✅ Vous avez reçu &6{amount} SkyCoins&a !"
+  coins-sent: "&a✅ Vous avez envoyé &6{amount} SkyCoins&a à {player} !"
+  coins-removed: "&c❌ &6{amount} SkyCoins&c vous ont été retirés !"
+  coins-set: "&e⚡ Vos SkyCoins ont été définis à &6{amount}&e !"
+  
+# Messages de shop
+shop:
+  purchase-success: "&a✅ Achat réussi ! &7(-{price} SkyCoins)"
+  purchase-failed: "&c❌ Achat échoué ! SkyCoins insuffisants."
+  item-unavailable: "&c❌ Cet objet n'est pas disponible !"
+  inventory-full: "&c❌ Votre inventaire est plein !"
+  
+# Messages de missions
+missions:
+  completed: "&a✅ Mission terminée : &e{mission}"
+  reward-received: "&6💰 Récompense reçue : &e{reward} SkyCoins"
+  already-completed: "&c❌ Vous avez déjà terminé cette mission !"
+  not-available: "&c❌ Cette mission n'est pas disponible !"
+  progress-updated: "&e📈 Progression : &b{current}/{target}"
+  
+# Messages de protection
+protection:
+  cannot-break: "&c❌ Vous ne pouvez pas casser de blocs ici !"
+  cannot-place: "&c❌ Vous ne pouvez pas poser de blocs ici !"
+  cannot-interact: "&c❌ Vous ne pouvez pas interagir ici !"
+  cannot-attack: "&c❌ Vous ne pouvez pas attaquer ici !"
+  pvp-disabled: "&c❌ Le PvP est désactivé sur cette île !"
+  cannot-open-containers: "&c❌ Vous ne pouvez pas ouvrir les contenants sur cette île !"
+  
+# Messages de bienvenue
+welcome:
+  first-join: 
+    - "&6✨ Bienvenue sur le serveur SkyBlock !"
+    - "&e🎯 Créez votre île avec &f/island&e !"
+    - "&7💡 Tapez &f/island help &7pour obtenir de l'aide."
+  returning-player:
+    - "&a🏠 Bon retour sur votre île !"
+    - "&7Utilisez &f/island &7pour accéder aux menus."
+  starter-coins: "&6💰 Vous avez reçu {amount} SkyCoins de bienvenue !"
+  
+# Messages d'aide
+help:
+  header: "&6=== Aide SkyBlock ==="
+  commands:
+    - "&e/island &7- Ouvrir le menu principal"
+    - "&e/island info &7- Informations sur votre île"
+    - "&e/skycoins &7- Voir vos SkyCoins"
+  admin-header: "&c=== Commandes Admin ==="
+  admin-commands:
+    - "&c/island reload &7- Recharger la configuration"
+    - "&c/island delete <joueur> &7- Supprimer une île"
+    - "&c/skycoins give <joueur> <montant> &7- Donner des SkyCoins"
+    
+# Messages GUI
+gui:
+  titles:
+    main-menu: "&6&l🏝️ SkyBlock Menu"
+    island-creation: "&6&l🌟 Créer votre Île"
+    island-settings: "&c&l⚙️ Paramètres d'Île"
+    shop: "&2&l🛒 Shop SkyBlock"
+    missions: "&e&l📜 Missions"
+    top-islands: "&6&l🏆 Classement"
+  
+  buttons:
+    back: "&c&l← Retour"
+    next-page: "&a&l→ Page suivante"
+    previous-page: "&c&l← Page précédente"
+    confirm: "&a&l✅ Confirmer"
+    cancel: "&c&l❌ Annuler"
+    
+# Messages d'erreur
+errors:
+  config-reload-failed: "&c❌ Erreur lors du rechargement de la configuration !"
+  database-error: "&c❌ Erreur de base de données ! Contactez un administrateur."
+  world-not-loaded: "&c❌ Le monde SkyBlock n'est pas chargé !"
+  internal-error: "&c❌ Erreur interne ! Contactez un administrateur."

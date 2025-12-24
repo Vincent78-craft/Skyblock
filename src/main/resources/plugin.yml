@@ -1,0 +1,47 @@
+name: SkyBlock
+version: '1.0.0'
+description: Plugin SkyBlock complet avec GUI sans dépendances
+main: fr.skyblock.SkyBlockPlugin
+api-version: 1.20
+authors: Vincent
+
+commands:
+  island:
+    description: Commande principale du SkyBlock
+    aliases: [is, sb, skyblock]
+    usage: /island
+  skycoins:
+    description: Voir ses SkyCoins
+    aliases: [coins, money]
+    usage: /skycoins
+
+permissions:
+  skyblock.*:
+    description: Toutes les permissions SkyBlock
+    default: true
+    children:
+      skyblock.island: true
+      skyblock.shop: true
+      skyblock.missions: true
+  skyblock.admin:
+    description: Permissions administrateur
+    default: op
+    children:
+      skyblock.*: true
+      skyblock.admin.reload: true
+      skyblock.admin.delete: true
+  skyblock.island:
+    description: Utiliser les commandes d'île
+    default: true
+  skyblock.shop:
+    description: Utiliser le shop
+    default: true
+  skyblock.missions:
+    description: Faire les missions
+    default: true
+  skyblock.admin.reload:
+    description: Recharger la configuration
+    default: op
+  skyblock.admin.delete:
+    description: Supprimer une île
+    default: op

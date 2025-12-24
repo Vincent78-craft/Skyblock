@@ -1,0 +1,291 @@
+# Configuration du Shop SkyBlock
+# Version: 1.0.0
+
+# Paramètres généraux du shop
+settings:
+  # Taxe sur tous les achats (pourcentage)
+  tax-rate: 0.0
+  
+  # Réductions selon le niveau de l'île
+  level-discounts:
+    enabled: true
+    discounts:
+      10: 5    # 5% de réduction au niveau 10
+      25: 10   # 10% de réduction au niveau 25
+      50: 15   # 15% de réduction au niveau 50
+      100: 20  # 20% de réduction au niveau 100
+
+# Catégories du shop
+categories:
+  basic_blocks:
+    name: "&8&l🧱 Blocs de Base"
+    icon: COBBLESTONE
+    enabled: true
+    items:
+      COBBLESTONE:
+        name: "Cobblestone"
+        price: 1
+        max-quantity: 64
+        enabled: true
+      STONE:
+        name: "Pierre"
+        price: 2
+        max-quantity: 64
+        enabled: true
+      DIRT:
+        name: "Terre"
+        price: 1
+        max-quantity: 64
+        enabled: true
+      SAND:
+        name: "Sable"
+        price: 2
+        max-quantity: 64
+        enabled: true
+      GRAVEL:
+        name: "Gravier"
+        price: 2
+        max-quantity: 64
+        enabled: true
+      OAK_PLANKS:
+        name: "Planches de Chêne"
+        price: 3
+        max-quantity: 64
+        enabled: true
+      GLASS:
+        name: "Verre"
+        price: 5
+        max-quantity: 64
+        enabled: true
+        
+  resources:
+    name: "&7&l⛏️ Ressources"
+    icon: IRON_INGOT
+    enabled: true
+    items:
+      COAL:
+        name: "Charbon"
+        price: 5
+        max-quantity: 64
+        enabled: true
+      IRON_INGOT:
+        name: "Lingot de Fer"
+        price: 10
+        max-quantity: 32
+        enabled: true
+      GOLD_INGOT:
+        name: "Lingot d'Or"
+        price: 20
+        max-quantity: 16
+        enabled: true
+      DIAMOND:
+        name: "Diamant"
+        price: 100
+        max-quantity: 8
+        enabled: true
+      EMERALD:
+        name: "Émeraude"
+        price: 150
+        max-quantity: 4
+        enabled: true
+      REDSTONE:
+        name: "Redstone"
+        price: 8
+        max-quantity: 64
+        enabled: true
+      LAPIS_LAZULI:
+        name: "Lapis Lazuli"
+        price: 12
+        max-quantity: 32
+        enabled: true
+        
+  food:
+    name: "&6&l🍞 Nourriture"
+    icon: BREAD
+    enabled: true
+    items:
+      BREAD:
+        name: "Pain"
+        price: 5
+        max-quantity: 32
+        enabled: true
+      COOKED_BEEF:
+        name: "Bœuf Cuit"
+        price: 8
+        max-quantity: 16
+        enabled: true
+      COOKED_PORKCHOP:
+        name: "Porc Cuit"
+        price: 8
+        max-quantity: 16
+        enabled: true
+      COOKED_CHICKEN:
+        name: "Poulet Cuit"
+        price: 6
+        max-quantity: 16
+        enabled: true
+      GOLDEN_APPLE:
+        name: "Pomme Dorée"
+        price: 50
+        max-quantity: 4
+        enabled: true
+      CAKE:
+        name: "Gâteau"
+        price: 25
+        max-quantity: 1
+        enabled: true
+        
+  tools:
+    name: "&b&l🛠️ Outils"
+    icon: DIAMOND_PICKAXE
+    enabled: true
+    items:
+      WOODEN_PICKAXE:
+        name: "Pioche en Bois"
+        price: 10
+        max-quantity: 1
+        enabled: true
+      STONE_PICKAXE:
+        name: "Pioche en Pierre"
+        price: 25
+        max-quantity: 1
+        enabled: true
+      IRON_PICKAXE:
+        name: "Pioche en Fer"
+        price: 50
+        max-quantity: 1
+        enabled: true
+      DIAMOND_PICKAXE:
+        name: "Pioche en Diamant"
+        price: 500
+        max-quantity: 1
+        enabled: true
+      WOODEN_AXE:
+        name: "Hache en Bois"
+        price: 10
+        max-quantity: 1
+        enabled: true
+      STONE_AXE:
+        name: "Hache en Pierre"
+        price: 25
+        max-quantity: 1
+        enabled: true
+      IRON_AXE:
+        name: "Hache en Fer"
+        price: 50
+        max-quantity: 1
+        enabled: true
+        
+  upgrades:
+    name: "&d&l✨ Améliorations"
+    icon: EXPERIENCE_BOTTLE
+    enabled: true
+    items:
+      ISLAND_SIZE_UPGRADE:
+        name: "Agrandir l'Île (+50 blocs)"
+        price: 1000
+        max-quantity: 1
+        enabled: true
+        special: true
+        description: "Augmente la taille de votre île"
+      MEMBER_SLOT_UPGRADE:
+        name: "Slot Membre Supplémentaire"
+        price: 2000
+        max-quantity: 1
+        enabled: true
+        special: true
+        description: "Permet d'avoir un membre de plus"
+      BIOME_CHANGE:
+        name: "Changement de Biome"
+        price: 500
+        max-quantity: 1
+        enabled: true
+        special: true
+        description: "Changer le biome de votre île"
+        
+  spawners:
+    name: "&5&l🔮 Générateurs"
+    icon: SPAWNER
+    enabled: true
+    items:
+      ZOMBIE_SPAWNER:
+        name: "Générateur de Zombies"
+        price: 5000
+        max-quantity: 1
+        enabled: true
+        special: true
+      SKELETON_SPAWNER:
+        name: "Générateur de Squelettes"
+        price: 6000
+        max-quantity: 1
+        enabled: true
+        special: true
+      CREEPER_SPAWNER:
+        name: "Générateur de Creepers"
+        price: 8000
+        max-quantity: 1
+        enabled: true
+        special: true
+      ENDERMAN_SPAWNER:
+        name: "Générateur d'Endermen"
+        price: 15000
+        max-quantity: 1
+        enabled: true
+        special: true
+        
+  decoration:
+    name: "&a&l🌸 Décoration"
+    icon: FLOWER_POT
+    enabled: true
+    items:
+      FLOWER_POT:
+        name: "Pot de Fleur"
+        price: 15
+        max-quantity: 8
+        enabled: true
+      PAINTING:
+        name: "Peinture"
+        price: 20
+        max-quantity: 4
+        enabled: true
+      ITEM_FRAME:
+        name: "Cadre"
+        price: 10
+        max-quantity: 8
+        enabled: true
+      BEACON:
+        name: "Balise"
+        price: 2000
+        max-quantity: 1
+        enabled: true
+      END_ROD:
+        name: "Tige du End"
+        price: 100
+        max-quantity: 4
+        enabled: true
+        
+  special:
+    name: "&e&l⭐ Objets Spéciaux"
+    icon: NETHER_STAR
+    enabled: true
+    items:
+      NETHER_STAR:
+        name: "Étoile du Nether"
+        price: 10000
+        max-quantity: 1
+        enabled: true
+      DRAGON_EGG:
+        name: "Œuf de Dragon"
+        price: 50000
+        max-quantity: 1
+        enabled: false
+      ELYTRA:
+        name: "Élytres"
+        price: 25000
+        max-quantity: 1
+        enabled: true
+      TOTEM_OF_UNDYING:
+        name: "Totem d'Immortalité"
+        price: 15000
+        max-quantity: 1
+        enabled: true

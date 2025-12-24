@@ -1,0 +1,296 @@
+# Configuration des Missions SkyBlock
+# Version: 1.0.0
+
+# Paramètres généraux des missions
+settings:
+  # Récompense bonus pour les missions quotidiennes
+  daily-bonus-multiplier: 1.5
+  
+  # Récompense bonus pour les missions hebdomadaires
+  weekly-bonus-multiplier: 2.0
+  
+  # Heure de reset des missions quotidiennes (format 24h)
+  daily-reset-hour: 0
+  
+  # Jour de reset des missions hebdomadaires (1=lundi, 7=dimanche)
+  weekly-reset-day: 1
+
+# Missions disponibles
+missions:
+  # Missions de base (répétables)
+  stone_breaker:
+    name: "Mineur Débutant"
+    description: "Cassez {target} blocs de pierre pour prouver votre détermination"
+    type: BREAK_BLOCKS
+    icon: STONE
+    target:
+      amount: 100
+      data: "STONE"
+    reward:
+      skycoins: 250
+      items: []
+    repeatable: true
+    max-completions: -1
+    enabled: true
+    
+  wood_collector:
+    name: "Bûcheron"
+    description: "Collectez {target} bûches de chêne pour vos constructions"
+    type: COLLECT_ITEMS
+    icon: OAK_LOG
+    target:
+      amount: 64
+      data: "OAK_LOG"
+    reward:
+      skycoins: 150
+      items: []
+    repeatable: true
+    max-completions: -1
+    enabled: true
+    
+  crafter:
+    name: "Artisan"
+    description: "Craftez {target} planches de bois"
+    type: CRAFT_ITEMS
+    icon: OAK_PLANKS
+    target:
+      amount: 32
+      data: "OAK_PLANKS"
+    reward:
+      skycoins: 100
+      items: []
+    repeatable: true
+    max-completions: -1
+    enabled: true
+    
+  farmer:
+    name: "Fermier"
+    description: "Récoltez {target} blés pour nourrir votre île"
+    type: COLLECT_ITEMS
+    icon: WHEAT
+    target:
+      amount: 50
+      data: "WHEAT"
+    reward:
+      skycoins: 200
+      items: []
+    repeatable: true
+    max-completions: -1
+    enabled: true
+    
+  breeder:
+    name: "Éleveur"
+    description: "Élevez {target} animaux sur votre île"
+    type: BUILD_BLOCKS  # Placeholder pour l'élevage
+    icon: EGG
+    target:
+      amount: 10
+      data: null
+    reward:
+      skycoins: 300
+      items: []
+    repeatable: true
+    max-completions: -1
+    enabled: true
+    
+  # Missions uniques
+  saver:
+    name: "Économe"
+    description: "Économisez {target} SkyCoins"
+    type: SPEND_COINS  # Logique inversée pour l'économie
+    icon: GOLD_INGOT
+    target:
+      amount: 1000
+      data: null
+    reward:
+      skycoins: 500
+      items: []
+    repeatable: false
+    max-completions: 1
+    enabled: true
+    
+  explorer:
+    name: "Explorateur"
+    description: "Visitez {target} îles différentes"
+    type: VISIT_ISLANDS
+    icon: COMPASS
+    target:
+      amount: 5
+      data: null
+    reward:
+      skycoins: 400
+      items:
+        - type: GOLDEN_APPLE
+          amount: 2
+    repeatable: false
+    max-completions: 1
+    enabled: true
+    
+  # Missions quotidiennes
+  daily_miner:
+    name: "Mineur Quotidien"
+    description: "Cassez 200 blocs aujourd'hui"
+    type: BREAK_BLOCKS
+    icon: IRON_PICKAXE
+    target:
+      amount: 200
+      data: null  # N'importe quel bloc
+    reward:
+      skycoins: 300
+      items: []
+    daily: true
+    repeatable: true
+    max-completions: 1
+    enabled: true
+    
+  daily_builder:
+    name: "Constructeur Quotidien"
+    description: "Posez 100 blocs aujourd'hui"
+    type: BUILD_BLOCKS
+    icon: BRICKS
+    target:
+      amount: 100
+      data: null
+    reward:
+      skycoins: 250
+      items: []
+    daily: true
+    repeatable: true
+    max-completions: 1
+    enabled: true
+    
+  daily_trader:
+    name: "Commerçant Quotidien"
+    description: "Dépensez 500 SkyCoins au shop aujourd'hui"
+    type: SPEND_COINS
+    icon: EMERALD
+    target:
+      amount: 500
+      data: null
+    reward:
+      skycoins: 200
+      items: []
+    daily: true
+    repeatable: true
+    max-completions: 1
+    enabled: true
+    
+  # Missions hebdomadaires
+  weekly_master_miner:
+    name: "Maître Mineur"
+    description: "Cassez 1000 blocs cette semaine"
+    type: BREAK_BLOCKS
+    icon: DIAMOND_PICKAXE
+    target:
+      amount: 1000
+      data: null
+    reward:
+      skycoins: 1500
+      items:
+        - type: DIAMOND_PICKAXE
+          amount: 1
+          enchantments:
+            - type: EFFICIENCY
+              level: 3
+    weekly: true
+    repeatable: true
+    max-completions: 1
+    enabled: true
+    
+  weekly_architect:
+    name: "Architecte"
+    description: "Construisez 500 blocs cette semaine"
+    type: BUILD_BLOCKS
+    icon: GOLDEN_AXE
+    target:
+      amount: 500
+      data: null
+    reward:
+      skycoins: 1200
+      items:
+        - type: GOLDEN_AXE
+          amount: 1
+          enchantments:
+            - type: EFFICIENCY
+              level: 2
+    weekly: true
+    repeatable: true
+    max-completions: 1
+    enabled: true
+    
+  weekly_socializer:
+    name: "Sociabilité"
+    description: "Visitez 10 îles différentes cette semaine"
+    type: VISIT_ISLANDS
+    icon: ENDER_PEARL
+    target:
+      amount: 10
+      data: null
+    reward:
+      skycoins: 2000
+      items:
+        - type: ENDER_PEARL
+          amount: 16
+    weekly: true
+    repeatable: true
+    max-completions: 1
+    enabled: true
+    
+  # Missions spéciales/événements
+  login_streak:
+    name: "Défi de Connexion"
+    description: "Connectez-vous 7 jours de suite"
+    type: VISIT_ISLANDS  # Placeholder pour la connexion
+    icon: CLOCK
+    target:
+      amount: 7
+      data: null
+    reward:
+      skycoins: 1000
+      items:
+        - type: DIAMOND
+          amount: 5
+        - type: GOLDEN_APPLE
+          amount: 3
+    special: true
+    repeatable: true
+    max-completions: -1
+    enabled: true
+    
+  island_master:
+    name: "Maître de l'Île"
+    description: "Atteignez le niveau 50 avec votre île"
+    type: BUILD_BLOCKS  # Placeholder pour le niveau
+    icon: NETHER_STAR
+    target:
+      amount: 50
+      data: null
+    reward:
+      skycoins: 10000
+      items:
+        - type: NETHER_STAR
+          amount: 1
+        - type: BEACON
+          amount: 1
+    special: true
+    repeatable: false
+    max-completions: 1
+    enabled: true
+    
+  wealthy_trader:
+    name: "Riche Commerçant"
+    description: "Dépensez 50000 SkyCoins au total"
+    type: SPEND_COINS
+    icon: EMERALD_BLOCK
+    target:
+      amount: 50000
+      data: null
+    reward:
+      skycoins: 15000
+      items:
+        - type: EMERALD_BLOCK
+          amount: 10
+    special: true
+    repeatable: false
+    max-completions: 1
+    enabled: true

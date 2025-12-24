@@ -1,0 +1,117 @@
+# Configuration principale du plugin SkyBlock
+# Version: 1.0.0
+
+# Paramètres des îles
+island:
+  # Taille par défaut des îles (en blocs)
+  default-size: 100
+  
+  # Taille maximale autorisée
+  max-size: 500
+  
+  # Nombre maximum de membres par île
+  max-members: 10
+  
+  # Espacement entre les îles (en blocs)
+  spacing: 1000
+  
+  # PvP activé par défaut sur les nouvelles îles
+  pvp-enabled-by-default: false
+  
+  # Visiteurs autorisés par défaut
+  allow-visitors-by-default: true
+  
+  # Biomes disponibles pour les îles
+  available-biomes:
+    - PLAINS
+    - DESERT
+    - TAIGA
+    - FOREST
+    - JUNGLE
+    - SAVANNA
+    - ICE_SPIKES
+    - BADLANDS
+  
+  # Intervalle de calcul du niveau des îles (en secondes)
+  level-calculation-interval: 60
+
+# Système économique
+economy:
+  # Activer le système de SkyCoins
+  enabled: true
+  
+  # SkyCoins donnés aux nouveaux joueurs
+  starter-coins: 100
+  
+  # Taxe sur les achats (pourcentage)
+  shop-tax: 0.0
+
+# Système de classement
+leaderboard:
+  # Nombre maximum d'îles affichées dans le top
+  max-islands: 10
+  
+  # Actualisation du classement (en secondes)
+  refresh-interval: 300
+
+# Sauvegarde automatique
+auto-save:
+  # Activer la sauvegarde automatique
+  enabled: true
+  
+  # Intervalle de sauvegarde (en secondes)
+  interval: 300
+
+# Paramètres de performance
+performance:
+  # Limite de calculs par tick pour le niveau des îles
+  max-level-calculations-per-tick: 5
+  
+  # Activer le cache pour les permissions
+  cache-permissions: true
+
+# Mode debug
+debug: false
+
+# Protection des îles
+protection:
+  # Bloquer les explosions
+  prevent-explosions: true
+  
+  # Bloquer les dégâts de feu
+  prevent-fire-damage: true
+  
+  # Bloquer les téléportations non autorisées
+  prevent-unauthorized-teleports: true
+
+# Messages de bienvenue
+welcome:
+  # Envoyer un message de bienvenue aux nouveaux joueurs
+  enabled: true
+  
+  # Délai avant l'envoi du message (en ticks)
+  delay: 60
+
+# Paramètres du Scoreboard
+scoreboard:
+  # Activer le scoreboard automatiquement à la connexion
+  auto-enable: true
+  
+  # Titre du scoreboard
+  title: "&6&l⭐ SkyBlock ⭐"
+  
+  # Intervalle de mise à jour (en secondes)
+  update-interval: 1
+  
+  # Format des nombres (true = 1.5K, false = 1500)
+  format-numbers: true
+  
+  # Affichage des éléments
+  display:
+    skycoins: true
+    island-info: true
+    island-level: true
+    island-members: true
+    rank: true
+    missions: true
+    date: true
